@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>D-day Calculation</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="icon" type="image/png" href="./images/soda.png">
+    <!-- <link rel='stylesheet' type='text/css' media='screen' href='main.css'> -->
+    <style>
+        @import url(style.css);
+    </style>
+</head>
+<body>
+    <header>
+        <h1><a id="header_header" href="./index.html">D-day Calculation</a></h1>
+    </header>
+    <section class="input">
+        <h2 class="input_select" id="input_select_frequently" >자주 선택하는 기념일</h2>
+
+        <button type="button" id="StartThisYear">2023년 시작한지 얼마나 지났을까?</button>
+        <button type="button" id="LeftThisYear">2023년 끝나려면 얼마나 남았을까?</button><br>
+        <button type="button" id="CSAT">수능</button><br>
+
+        <button type="button" id="Valentine">발렌타인데이</button>
+        <button type="button" id="White_Day">화이트데이</button>
+        <button type="button" id="Christmas">크리스마스</button><br>
+
+        <button type="button" id="Orangestar_birthday">Orangestar 생일</button>
+        <button type="button" id="Henceforth">And So Henceforth, 발매까지</button>
+        <button type="button" id="How_orangestar"><a href="./orangestar.html">Orangestar가 누구인가요?</a></button>
+
+        <h2 class="input_select" id="input_select_directly">직접 선택하기</h2>
+        <h5 id="input_explanation">기념하고 싶은 날을 골라보세요</h5>
+        <input type="date" id ="SelectDay" value="2023-06-01">
+        <button type="button" id ="SelectDayInput">확인</button><br>
+
+    </section>
+    <section class="output">
+        <h2 id="output_today"></h2>
+
+        <h4 id="output_comment">멋진 하루🌅를 보낼 당신!!<br>
+            스트레칭을 해보세요<br>
+            몸이 좋아지고 머리가 맑아집니다</h4>
+        <!-- <iframe width="600" height="300" src="https://www.youtube.com/embed/emrt46SRyYs"
+        title="Orangestar - DAYBREAK FRONTLINE (feat. IA) Official Video"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe> -->
+        
+        <h3 class="output_result_time" id="output_time"></h3>
+        <h5 class="output_result_time" id="output_time_ment"></h5>
+
+        <h2 class="output_subtitle" id="daycount" >날짜 수</h2>
+        <h5 class="output_subtitle_explanation" id="daycount_explanation">날짜 수는 1일부터 계산해요!<br>
+            연인과의 기념일 계산에 유용하답니다 ^!^</h5>
+        <h3 class="output_result" id="output_day"></h3>
+        
+        <h2 class="output_subtitle" id="ddaycount">디데이</h2>
+        <h5 class="output_subtitle_explanation" id="ddaycount_explanation">디데이는 0일부터 계산해요!<br>
+            지난 날을 계산할 때만 적용됩니다</h5>
+        <h3 class="output_result" id="output_Dday"></h3>
+        
+        <h2 class="output_subtitle" id="weekcount">주수</h2>
+        <h5 class="output_subtitle_explanation_1" id="weekcount_explanation">몇 주 며칠 단위로 알 수 있어요</h5>
+        <h3 class="output_result" id="output_week"></h3>
+
+        <h2 class="output_subtitle" id="output_monthcount">개월 수</h2>
+        <h5 class="output_subtitle_explanation_1" id="output_monthcount_explanation">몇 년 몇 개월 며칠 단위로 지났는지 알 수 있어요</h5>
+        <h3 class="output_result" id="output_month"></h3>
+        <h3 class="output_result" id="output_month_day"></h3>
+    </section>
+    <nav class="side_nav">
+        <ul>
+            <h3>나라 별 공휴일</h3>
+            <li><a href="https://www.mois.go.kr/chd/sub/a05/feteDay/screen.do"> 우리나라 국경일과 기념일</a></li>
+            <li><a href="https://ko.wikipedia.org/wiki/%EC%A1%B0%EC%84%A0%EB%AF%BC%EC%A3%BC%EC%A3%BC%EC%9D%98%EC%9D%B8%EB%AF%BC%EA%B3%B5%ED%99%94%EA%B5%AD%EC%9D%98_%EA%B3%B5%ED%9C%B4%EC%9D%BC">
+            북한의 공휴일</a></li>
+            <br>
+        
+            <li><a href="https://ko.wikipedia.org/wiki/%EA%B7%B8%EB%A6%AC%EC%8A%A4%EC%9D%98_%EA%B3%B5%ED%9C%B4%EC%9D%BC"> 그리스의 공휴일</a></li>
+            <li><a href="https://ko.wikipedia.org/wiki/%EB%84%A4%EB%8D%9C%EB%9E%80%EB%93%9C%EC%9D%98_%EA%B3%B5%ED%9C%B4%EC%9D%BC"> 네덜란드의 공휴일</a></li>
+            <li><a href="https://ko.wikipedia.org/wiki/%EB%89%B4%EC%A7%88%EB%9E%9C%EB%93%9C%EC%9D%98_%EA%B3%B5%ED%9C%B4%EC%9D%BC"> 뉴질랜드의 공휴일</a></li>
+            <li><a href="https://ko.wikipedia.org/wiki/%EB%8D%B4%EB%A7%88%ED%81%AC%EC%9D%98_%EA%B3%B5%ED%9C%B4%EC%9D%BC"> 덴마크의 공휴일</a></li>
+            <li><a href="https://ko.wikipedia.org/wiki/%EB%8F%85%EC%9D%BC%EC%9D%98_%EA%B3%B5%ED%9C%B4%EC%9D%BC"> 독일의 공휴일</a></li>
+            <li><a href="https://ko.wikipedia.org/wiki/%EB%A9%95%EC%8B%9C%EC%BD%94%EC%9D%98_%EA%B3%B5%ED%9C%B4%EC%9D%BC"> 멕시코의 공휴일</a></li>
+            <li><a href="https://ko.wikipedia.org/wiki/%EB%AF%B8%EA%B5%AD%EC%9D%98_%EA%B3%B5%ED%9C%B4%EC%9D%BC"> 미국의 공휴일</a></li>
+            <li><a href="https://ko.wikipedia.org/wiki/%EB%B2%A0%ED%8A%B8%EB%82%A8%EC%9D%98_%EA%B3%B5%ED%9C%B4%EC%9D%BC"> 베트남의 공휴일</a></li>
+            <li><a href="https://ko.wikipedia.org/wiki/%EB%B8%8C%EB%9D%BC%EC%A7%88%EC%9D%98_%EA%B3%B5%ED%9C%B4%EC%9D%BC"> 브라질의 공휴일</a></li>
+            <li><a href="https://ko.wikipedia.org/wiki/%EC%9D%BC%EB%B3%B8%EC%9D%98_%EA%B3%B5%ED%9C%B4%EC%9D%BC"> 일본의 공휴일</a></li>
+            <li><a href="https://ko.wikipedia.org/wiki/%EC%A4%91%ED%99%94%EC%9D%B8%EB%AF%BC%EA%B3%B5%ED%99%94%EA%B5%AD%EC%9D%98_%EA%B3%B5%ED%9C%B4%EC%9D%BC">
+            중국의 공휴일</a></li>
+            <li><a href="https://ko.wikipedia.org/wiki/%ED%94%84%EB%9E%91%EC%8A%A4%EC%9D%98_%EA%B3%B5%ED%9C%B4%EC%9D%BC"> 프랑스의 공휴일</a></li>
+        </ul>
+        
+        <ul>
+            <h3>기념일 자세히 알아보기</h3>
+            
+            <li><a href="https://ko.wikipedia.org/wiki/%EC%83%88%ED%95%B4_%EC%B2%AB%EB%82%A0"> 새해 첫날</a></li>
+            <li><a href="https://ko.wikipedia.org/wiki/%EC%84%A4%EB%82%A0_(%ED%95%9C%EA%B5%AD)"> 설날</a></li>
+            <li><a href="https://ko.wikipedia.org/wiki/3%C2%B71%EC%A0%88"> 3·1절</a></li>
+            <li><a href="https://ko.wikipedia.org/wiki/%EB%B6%80%EC%B2%98%EB%8B%98_%EC%98%A4%EC%8B%A0_%EB%82%A0"> 부처님 오신 날</a></li>
+            <li><a href="https://ko.wikipedia.org/wiki/%EC%96%B4%EB%A6%B0%EC%9D%B4%EB%82%A0"> 어린이날</a></li>
+            <li><a href="https://ko.wikipedia.org/wiki/%ED%98%84%EC%B6%A9%EC%9D%BC"> 현충일</a></li>
+            <li><a href="https://ko.wikipedia.org/wiki/%EA%B4%91%EB%B3%B5%EC%A0%88"> 광복절</a></li>
+            <li><a href="https://ko.wikipedia.org/wiki/%EC%B6%94%EC%84%9D"> 추석</a></li>
+            <li><a href="https://ko.wikipedia.org/wiki/%EA%B0%9C%EC%B2%9C%EC%A0%88"> 개천절</a></li>
+            <li><a href="https://ko.wikipedia.org/wiki/%ED%95%9C%EA%B8%80%EB%82%A0"> 한글날</a></li>
+            <li><a href="https://ko.wikipedia.org/wiki/%ED%81%AC%EB%A6%AC%EC%8A%A4%EB%A7%88%EC%8A%A4"> 크리스마스</a></li>
+            <li><a href="https://ko.wikipedia.org/wiki/%EC%84%A0%EA%B1%B0%EC%9D%BC_(%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD)"> 선거일</a></li>
+        </ul>
+        
+        <iframe width="250" height="143" src="https://www.youtube.com/embed/rXzKXQKgFUY" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe><br>
+        
+        <a href="https://www.youtube.com/channel/UCcLGs-85ASgKuNxNXceBGcQ"><img width="40" height="40" src="./images/youtube.png"></a>
+        <a href="https://twitter.com/MikanseiP"><img width="40" height="40" src="./images/twitter.png"></a>
+
+    </nav>
+    <footer>
+        <section class="copyright">
+            <p id="copyright_text">@copyright, hrcho</p>
+         </section>
+    </footer>
+
+    <script src='main.js'></script>
+</body>
+</html>

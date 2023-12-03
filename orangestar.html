@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>D-day Calculation</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="icon" type="image/png" href="./images/soda.png">
+    <!-- <link rel='stylesheet' type='text/css' media='screen' href='main.css'> -->
+    <style>
+        @import url(style.css);
+    </style>
+</head>
+<body>
+    <header>
+        <h1><a id="header_header" href="./index.html">D-day Calculation</a></h1>
+    </header>
+    <section class="Orangestar_profil">
+        <img src="./images/orangestarProfil.webp">
+        <h1>Orangestar</h1>
+        <h2 id="job">일본의 작곡가</h2>
+        <h2 class="right_title" id="born">출신지</h2>
+            <h3 class="right_title" id="born_result">일본 미야기현 센다이시</h3>
+        <h2 class="right_title" id="birthday">출생</h2>
+            <h3 class="right_title" id="birthday_result">1997년 8월 20일 </h3>
+        <h2 class="right_title" id="debute">데뷔</h2>
+            <h3 class="right_title" id="debute_result">동인: 2013년 노라보쿠 </h3>
+            <h3 class="right_title" id="debute_result_major">메이저: 2015년 미완성 에이트 비트 </h3>
+    </section>
+    <section class="Orangestar_album">
+        <h1>발매한 앨범</h1>
+        <h4 id="Orangestar_explain">앨범을 누르면 유튜브 뮤직 내 앨범으로 이동합니다.</h4>
+
+        <a class="Mikansei" id="Mikansei_youtube" href="https://music.youtube.com/playlist?list=OLAK5uy_m559VJh7YNWPYrq_lkBBTlCfg87F5tRD8"><img src="./images/mikansei.jpg"></a>
+        <h3 class="Mikansei" id="Mikansei">Mikansei Eight Beats</h3>
+        <h4 class="Mikansei" id="Mikansei_when">2015년 발매</h4>
+
+        <a  class="osc" id="OSC_youtube" href="https://music.youtube.com/playlist?list=OLAK5uy_mjB89phkfxAlCDNLze8gENYEpdgswZ93Y"><img src="./images/osc.jpg"></a>
+        <h3 class="osc" id="OSC">Mishuuroku OSC</h3>
+        <h4 class="osc" id="OSC_when">2016년 발매</h4>
+
+        <a class="seaside" id="SEASIDE_youtube" href="https://music.youtube.com/playlist?list=OLAK5uy_lBL0QAOHMXbcwIkrFHey4zNb6okGnyhsU"><img src="./images/seaside.jpg"></a>
+        <h3 class="seaside" id="SEASIDE">SEASIDE SOLILOQUIES</h3>
+        <h4 class="seaside" id="SEASIDE_when">2017년 1월 18일 발매</h4>
+        
+        <img class="andsohenceforth" id="Henceforth_youtube" src="./images/andsohenceforth.jpg">
+        <h3 class="andsohenceforth" id="SoHenceforth">And So Henceforth,</h3>
+        <h4 class="andsohenceforth" id="Henceforth_when">2023년 8월 30일 발매 예정</h4>
+    </section>
+    <section class="Orangestar_youtube">
+        <h1>유명한 유튜브 영상</h1>
+
+        <iframe class="Patrol" id="Night_video" width="400" height="225" src="https://www.youtube.com/embed/XogSflwXgpw"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <h3 class="Patrol" id="Night_title">Night Sky Patrol of Tomorrow</h3>
+        <h4 class="Patrol" id="Night_seen">조회수 4900만회</h4>
+
+        <iframe id="dbfl_video" class="dbfl youtubeEven" width="400" height="225" src="https://www.youtube.com/embed/emrt46SRyYs" 
+        title="YouTube video player" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <h3 id="dbfl_title" class="dbfl youtubeEven">DAYBREAK FRONTLINE</h3>
+        <h4 id="dbfl_seen" class="dbfl youtubeEven">조회수 4685만회</h4>
+
+        <iframe id="Clear_video" class="Clear" width="400" height="225" src="https://www.youtube.com/embed/BwGpXK3W6tE"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <h3 id="Clear_title" class="Clear">Clear Weather</h3>
+        <h4 id="Clear_seen" class="Clear">조회수 1612만회</h4>
+
+        <iframe id="Surges_video" class="Surges youtubeEven" width="400" height="225" src="https://www.youtube.com/embed/rkaNKAvksDE"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <h3 id="Surges_title" class="Surges youtubeEven">Surges</h3>
+        <h4 id="Surges_seen" class="Surges youtubeEven">조회수 1377만회</h4>
+
+        <iframe id="Hare_video" class="Hare" width="400" height="225" src="https://www.youtube.com/embed/wvlUWjqGQSA" 
+        title="YouTube video player" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <h3 id="Hare_title" class="Hare">Hare wo Matsu</h3>
+        <h4 id="Hare_seen" class="Hare">조회수 590만회</h4>
+
+        <iframe id="Uz_video" class="Uz youtubeEven" width="400" height="225" src="https://www.youtube.com/embed/Tj5KVAnqB5o" 
+        title="YouTube video player" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <h3 id="Uz_title" class="Uz youtubeEven">Uz</h3>
+        <h4 id="Uz_seen" class="Uz youtubeEven">조회수 533만회</h4>
+    </section>
+
+    <nav class="side_nav">
+        <ul>
+            <h3>나라 별 공휴일</h3>
+            <li><a href="https://www.mois.go.kr/chd/sub/a05/feteDay/screen.do"> 우리나라 국경일과 기념일</a></li>
+            <li><a href="https://ko.wikipedia.org/wiki/%EC%A1%B0%EC%84%A0%EB%AF%BC%EC%A3%BC%EC%A3%BC%EC%9D%98%EC%9D%B8%EB%AF%BC%EA%B3%B5%ED%99%94%EA%B5%AD%EC%9D%98_%EA%B3%B5%ED%9C%B4%EC%9D%BC">
+            북한의 공휴일</a></li>
+            <br>
+        
+            <li><a href="https://ko.wikipedia.org/wiki/%EA%B7%B8%EB%A6%AC%EC%8A%A4%EC%9D%98_%EA%B3%B5%ED%9C%B4%EC%9D%BC"> 그리스의 공휴일</a></li>
+            <li><a href="https://ko.wikipedia.org/wiki/%EB%84%A4%EB%8D%9C%EB%9E%80%EB%93%9C%EC%9D%98_%EA%B3%B5%ED%9C%B4%EC%9D%BC"> 네덜란드의 공휴일</a></li>
+            <li><a href="https://ko.wikipedia.org/wiki/%EB%89%B4%EC%A7%88%EB%9E%9C%EB%93%9C%EC%9D%98_%EA%B3%B5%ED%9C%B4%EC%9D%BC"> 뉴질랜드의 공휴일</a></li>
+            <li><a href="https://ko.wikipedia.org/wiki/%EB%8D%B4%EB%A7%88%ED%81%AC%EC%9D%98_%EA%B3%B5%ED%9C%B4%EC%9D%BC"> 덴마크의 공휴일</a></li>
+            <li><a href="https://ko.wikipedia.org/wiki/%EB%8F%85%EC%9D%BC%EC%9D%98_%EA%B3%B5%ED%9C%B4%EC%9D%BC"> 독일의 공휴일</a></li>
+            <li><a href="https://ko.wikipedia.org/wiki/%EB%A9%95%EC%8B%9C%EC%BD%94%EC%9D%98_%EA%B3%B5%ED%9C%B4%EC%9D%BC"> 멕시코의 공휴일</a></li>
+            <li><a href="https://ko.wikipedia.org/wiki/%EB%AF%B8%EA%B5%AD%EC%9D%98_%EA%B3%B5%ED%9C%B4%EC%9D%BC"> 미국의 공휴일</a></li>
+            <li><a href="https://ko.wikipedia.org/wiki/%EB%B2%A0%ED%8A%B8%EB%82%A8%EC%9D%98_%EA%B3%B5%ED%9C%B4%EC%9D%BC"> 베트남의 공휴일</a></li>
+            <li><a href="https://ko.wikipedia.org/wiki/%EB%B8%8C%EB%9D%BC%EC%A7%88%EC%9D%98_%EA%B3%B5%ED%9C%B4%EC%9D%BC"> 브라질의 공휴일</a></li>
+            <li><a href="https://ko.wikipedia.org/wiki/%EC%9D%BC%EB%B3%B8%EC%9D%98_%EA%B3%B5%ED%9C%B4%EC%9D%BC"> 일본의 공휴일</a></li>
+            <li><a href="https://ko.wikipedia.org/wiki/%EC%A4%91%ED%99%94%EC%9D%B8%EB%AF%BC%EA%B3%B5%ED%99%94%EA%B5%AD%EC%9D%98_%EA%B3%B5%ED%9C%B4%EC%9D%BC">
+            중국의 공휴일</a></li>
+            <li><a href="https://ko.wikipedia.org/wiki/%ED%94%84%EB%9E%91%EC%8A%A4%EC%9D%98_%EA%B3%B5%ED%9C%B4%EC%9D%BC"> 프랑스의 공휴일</a></li>
+        </ul>
+        
+        <ul>
+            <h3>기념일 자세히 알아보기</h3>
+            
+            <li><a href="https://ko.wikipedia.org/wiki/%EC%83%88%ED%95%B4_%EC%B2%AB%EB%82%A0"> 새해 첫날</a></li>
+            <li><a href="https://ko.wikipedia.org/wiki/%EC%84%A4%EB%82%A0_(%ED%95%9C%EA%B5%AD)"> 설날</a></li>
+            <li><a href="https://ko.wikipedia.org/wiki/3%C2%B71%EC%A0%88"> 3·1절</a></li>
+            <li><a href="https://ko.wikipedia.org/wiki/%EB%B6%80%EC%B2%98%EB%8B%98_%EC%98%A4%EC%8B%A0_%EB%82%A0"> 부처님 오신 날</a></li>
+            <li><a href="https://ko.wikipedia.org/wiki/%EC%96%B4%EB%A6%B0%EC%9D%B4%EB%82%A0"> 어린이날</a></li>
+            <li><a href="https://ko.wikipedia.org/wiki/%ED%98%84%EC%B6%A9%EC%9D%BC"> 현충일</a></li>
+            <li><a href="https://ko.wikipedia.org/wiki/%EA%B4%91%EB%B3%B5%EC%A0%88"> 광복절</a></li>
+            <li><a href="https://ko.wikipedia.org/wiki/%EC%B6%94%EC%84%9D"> 추석</a></li>
+            <li><a href="https://ko.wikipedia.org/wiki/%EA%B0%9C%EC%B2%9C%EC%A0%88"> 개천절</a></li>
+            <li><a href="https://ko.wikipedia.org/wiki/%ED%95%9C%EA%B8%80%EB%82%A0"> 한글날</a></li>
+            <li><a href="https://ko.wikipedia.org/wiki/%ED%81%AC%EB%A6%AC%EC%8A%A4%EB%A7%88%EC%8A%A4"> 크리스마스</a></li>
+            <li><a href="https://ko.wikipedia.org/wiki/%EC%84%A0%EA%B1%B0%EC%9D%BC_(%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD)"> 선거일</a></li>
+        </ul>
+        
+        <iframe width="250" height="143" src="https://www.youtube.com/embed/rXzKXQKgFUY" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe><br>
+        
+        <a href="https://www.youtube.com/channel/UCcLGs-85ASgKuNxNXceBGcQ"><img width="40" height="40" src="./images/youtube.png"></a>
+        <a href="https://twitter.com/MikanseiP"><img width="40" height="40" src="./images/twitter.png"></a>
+
+    </nav>
+    <footer>
+        <section class="copyright_orangestar">
+            <p id="copyright_text">@copyright, hrcho</p>
+         </section>
+    </footer>
+
+    <script src='main.js'></script>
+</body>
+</html>

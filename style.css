@@ -1,0 +1,654 @@
+@font-face {
+    font-family: 'SUITE-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NeoDunggeunmoPro-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/NeoDunggeunmoPro-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cafe24Ssurround';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+body,  #Orangestar_explain{
+	font-family: 'SUITE-Regular';
+    background-color: rgb(253, 239, 241);
+}
+
+header{
+    display : inline-block;
+}
+
+@keyframes header-ani{
+    from{text-shadow: 0px 0px 20px rgb(144, 192, 255);}
+    10%{text-shadow: 0px 0px 20px rgb(132, 185, 255);}
+    20%{text-shadow: 0px 0px 20px rgb(111, 173, 255);}
+    30%{text-shadow: 0px 0px 20px rgb(87, 160, 255);}
+    40%{text-shadow: 0px 0px 20px rgb(69, 150, 255);}
+    50%{text-shadow: 0px 0px 20px rgb(37, 131, 255);}
+    60%{text-shadow: 0px 0px 20px rgb(17, 120, 255);}
+    70%{text-shadow: 0px 0px 20px rgb(0, 92, 212);}
+    80%{text-shadow: 0px 0px 20px rgb(0, 66, 152);}
+    90%{text-shadow: 0px 0px 20px rgb(0, 35, 81);}
+    to{text-shadow: 0px 0px 20px rgb(0, 15, 36);}
+}
+
+header{
+    position: absolute;
+    height : 200px;
+    width: 400px;
+    left : 550px;
+
+    background: url('./images/cloud.png');
+    background-size: contain;
+}
+
+header h1 {
+    position: relative;
+    top: 50px;
+
+    text-align: center;
+    
+
+    color: rgb(255, 255, 255);
+
+    animation-name: header-ani;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.input{
+    display : inline-block;
+    position: absolute;
+
+    width : 500px;
+
+    top : 200px;
+    left : 350px;
+}
+
+#StartThisYear{
+    position: absolute;
+    top : 80px;
+}
+
+#LeftThisYear{
+    position: absolute;
+    top : 80px;
+    left : 230px;
+}
+
+#CSAT{
+    position: absolute;
+    top : 110px;
+}
+
+#Valentine{
+    position: absolute;
+    top : 140px;
+}
+
+#White_Day{
+    position: absolute;
+    top : 140px;
+    left : 100px;
+}
+
+#Christmas{
+    position: absolute;
+    top : 140px;
+    left : 190px;
+}
+
+#Orangestar_birthday{
+    position: absolute;
+    top : 170px;
+}
+
+#Henceforth{
+    position: absolute;
+    top : 170px;
+    left : 120px;
+}
+
+#How_orangestar{
+    position: absolute;
+    top : 170px;
+    left : 320px;
+    background-color: rgba(196, 182, 182, 0.626);
+}
+
+#How_orangestar a:visited {
+    color: rgb(67, 76, 80);
+}
+
+#input_select_directly{
+    position: absolute;
+    top : 220px;
+}
+
+#input_explanation{
+    position: absolute;
+    top : 260px;
+}
+
+#SelectDay{
+    position: absolute;
+    top : 320px;
+    
+}
+
+#SelectDayInput{
+    position: absolute;
+    top : 320px;
+    
+    left : 120px;
+}
+
+.input_select{
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 8px rgb(255, 2, 36);
+}
+
+#input_explanation{
+    color: rgb(255, 2, 36);
+}
+
+.input button, #SelectDay{
+    border: solid 2px rgba(255, 133, 149, 0.853);
+    background-color: rgba(255, 255, 255, 0.626);
+    color: rgb(67, 76, 80);
+    border-radius: 10px;
+}
+
+.input button:hover , #SelectDay:hover{
+    border: solid 2px rgb(255, 255, 255);
+    background-color: rgba(255, 133, 149, 0.853);
+    color: rgb(255, 255, 255);
+}
+
+/* orangestar_profil */
+
+
+#header_header {
+    color: rgb(255, 255, 255);
+}
+
+#header_header:visited {
+    color: rgb(255, 255, 255);
+}
+
+.Orangestar_profil, .Orangestar_album, .Orangestar_youtube{
+    
+    left : 350px;
+}
+
+.Orangestar_profil{
+    position: absolute;
+    
+    width : 700px;
+    height : 400px;
+
+    top : 250px;
+}
+
+.Orangestar_profil h1{
+    Display: inline-block;
+
+    position: absolute;
+
+    top : 200px;
+    left : 80px;
+    color: rgb(255, 170, 0);
+    text-shadow: 0px 0px 8px rgb(255, 170, 0);
+}
+
+.Orangestar_profil h2{
+    position: absolute;
+    
+    Display: inline-block;
+    color: rgb(255, 170, 0);
+}
+
+#job{
+    top : 250px;
+    left : 80px;
+}
+
+#birthday{
+    top : 100px;
+}
+
+#debute{
+    top : 200px;
+}
+
+.right_title{
+    position: absolute;
+    left : 350px;
+}
+
+#born_result{
+    top : 50px;
+}
+
+#birthday_result{
+    top : 150px;
+}
+
+#debute_result{
+    top : 250px;
+}
+
+#debute_result_major{
+    top : 290px;
+}
+
+.Orangestar_album{
+    Display: inline-block;
+    position: absolute;
+    
+    width : 800px;
+    height : 800px;
+
+    top : 650px;
+}
+
+.Orangestar_album  img{
+    width: 200px;
+    height: 200px;
+}
+
+.Mikansei{
+    Display: inline-block;
+    position: absolute;
+}
+
+#Mikansei{
+    Display: inline-block;
+    position: absolute;
+    top : 320px;
+    left : 0px;
+}
+
+#Mikansei_when{
+    Display: inline-block;
+    position: absolute;
+    top : 350px;
+    left : 0px;
+}
+
+.osc{
+    Display: inline-block;
+    position: absolute;
+    left : 400px;
+}
+
+#OSC_youtube{
+    top : 120px;
+}
+
+#OSC{
+    top : 320px;
+}
+
+#OSC_when{
+    top : 350px;
+}
+
+
+.seaside{
+    Display: inline-block;
+    position: absolute;
+    left : 0px;
+}
+
+#SEASIDE_youtube{
+    top : 480px;
+}
+
+#SEASIDE{
+    top : 680px;
+}
+
+#SEASIDE_when{
+    top : 710px;
+}
+
+
+
+.andsohenceforth{
+    Display: inline-block;
+    position: absolute;
+    left : 400px;
+}
+
+#Henceforth_youtube{
+    top : 480px;
+}
+
+#SoHenceforth{
+    top : 680px;
+    left : 400px;
+}
+
+#Henceforth_when{
+    top : 710px;
+}
+
+.Orangestar_album h1, .Orangestar_youtube h1{
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 8px rgb(191, 127, 0);
+}
+
+#Orangestar_explain{
+    color: rgb(191, 127, 0);
+}
+
+.Orangestar_youtube{
+    Display: inline-block;
+    position : absolute; 
+    top : 1500px;
+    
+    width : 1000px;
+    height : 1200px;
+}
+
+.Patrol{
+    Display: inline-block;
+    position: absolute;
+    left : 0px;
+}
+#Night_video{
+    top : 100px;
+}
+#Night_title{
+    top : 330px;
+}
+#Night_seen{
+    top : 360px;
+}
+
+.dbfl{
+    Display: inline-block;
+    position: absolute;
+    left : 500px;
+}
+#dbfl_video{
+    top : 100px;
+}
+#dbfl_title{
+    top : 330px;
+}
+#dbfl_seen{
+    top : 360px;
+}
+
+.Clear{
+    Display: inline-block;
+    position: absolute;
+}
+#Clear_video{
+    top : 500px;
+}
+#Clear_title{
+    top : 730px;
+}
+#Clear_seen{
+    top : 760px;
+}
+
+.Surges{
+    Display: inline-block;
+    position: absolute;
+    left : 500px;
+}
+#Surges_video{
+    top : 500px;
+}
+#Surges_title{
+    top : 730px;
+}
+#Surges_seen{
+    top : 760px;
+}
+
+.Hare{
+    Display: inline-block;
+    position: absolute;
+}
+#Hare_video{
+    top : 900px;
+}
+#Hare_title{
+    top : 1130px;
+}
+#Hare_seen{
+    top : 1160px;
+}
+
+.Uz{
+    Display: inline-block;
+    position: absolute;
+    left : 500px;
+}
+#Uz_video{
+    top : 900px;
+}
+#Uz_title{
+    top : 1130px;
+}
+#Uz_seen{
+    top : 1160px;
+}
+/* orangestar_profil */
+
+.output{
+    position: absolute;
+    left : 350px;
+    height : 900px;
+    width : 800px;
+
+    top: 600px;
+}
+
+#output_comment, .Orangestar_profil h3, .Orangestar_album h3, .Orangestar_album h4, .Orangestar_youtube h3, .Orangestar_youtube h4{
+    font-family: 'Cafe24Ssurround';
+
+    color: rgb(67, 76, 80);
+}
+
+#output_comment{
+    display : inline-block;
+}
+
+.output_result_time{
+    position: absolute;
+    Display: inline-block;
+    top: 120px;
+    left : 0px;
+
+    font-family: 'NeoDunggeunmoPro-Regular';
+    
+    color: rgb(67, 76, 80);
+    text-shadow:0px 0px 10px rgb(67, 76, 80);
+}
+
+#output_time_ment{
+    position: absolute;
+    top: 150px;
+}
+
+.output_subtitle{
+    display : inline-block;
+    position: absolute;
+    
+    left : 0px;
+}
+
+#daycount{
+    top: 250px;
+}
+
+#ddaycount{
+    top: 400px;
+}
+
+#weekcount{
+    top: 550px;
+}
+
+#output_monthcount{
+    top: 700px;
+}
+
+
+.output_subtitle_explanation{
+    display : inline-block;
+
+    
+    position: absolute;
+    left: 80px;
+
+    color: rgb(3, 192, 0);
+}
+
+#daycount_explanation{
+    top: 245px;
+}
+
+#ddaycount_explanation{
+    top: 395px;
+}
+
+.output_subtitle_explanation_1{
+    display : inline-block;
+
+    position: absolute;
+    left: 80px;
+    
+    color: rgb(3, 192, 0);
+}
+
+#weekcount_explanation{
+    top: 555px;
+    left: 60px;
+}
+
+#output_monthcount_explanation{
+    top: 705px;
+}
+
+.output_result{
+    display : inline-block;
+
+    position: absolute;
+
+    
+    left: 0px;
+
+    font-family: 'NeoDunggeunmoPro-Regular';
+    color: rgb(0, 120, 0);
+}
+
+#output_day{
+    top: 325px;
+}
+
+#output_Dday{
+    top: 475px;
+} 
+
+#output_week{
+    top: 625px;
+} 
+
+#output_month{
+    top: 775px;
+} 
+
+#output_month_day{
+    top: 775px;
+    left: 100px;
+} 
+
+
+
+.output_subtitle{
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 8px rgb(0, 120, 0);
+}
+
+.side_nav{
+    position: absolute;
+    top: 200px;
+    width: 300px;
+    /* height: 1200px; */
+    height:auto;
+    background: url('./images/star.gif');
+    background-size: contain;
+}
+
+ul li {
+    list-style-position: inside;
+
+    line-height: 1.5;
+}
+
+ul h3 {
+    color: rgb(255, 255, 255);
+    text-shadow:0px 0px 10px rgb(0, 38, 255);
+}
+
+li::marker {
+    color: rgb(67, 76, 80);
+
+    font-size: 0.9em;
+    font-weight: bold;
+  }
+
+a {
+    text-decoration: none;
+    color: rgb(67, 76, 80);
+}
+
+a:visited {
+    color: rgb(0, 38, 255);
+}
+
+.copyright{
+    position: absolute;
+    height : 100px;
+    width : 1000px;
+
+    top: 1500px;
+}
+
+.copyright_orangestar{
+    position: absolute;
+    height : 100px;
+    width : 1000px;
+
+    top: 2800px;
+}
+
+#copyright_text{
+    position: relative;
+
+    display : inline-block;
+    left : 700px;
+
+    color: rgb(67, 76, 80);
+}
+
