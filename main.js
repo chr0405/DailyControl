@@ -100,34 +100,6 @@ Christmas.addEventListener("click", function(){
     }
 });
 
-const Orangestar_birthday = document.getElementById("Orangestar_birthday");
-const Orangestar_birthdayValue = "2024-08-20";
-Orangestar_birthday.addEventListener("click", function(){
-    remove();
-    output_comment.innerHTML = "Orangestar는 제가 좋아하는 작곡가입니다 <br> DAYBREAK FRONTLINE이라는 곡이 유명합니다 <br> 어떤 노래를 제일 좋아하시나요? "
-    
-    if(kyou.getTime() > Orangestar_birthdayValue){
-        sugositahi_kaisan(Orangestar_birthdayValue);
-    }
-    else{
-        kuruhi_kaisan(Orangestar_birthdayValue);
-    }
-});
-
-const Henceforth = document.getElementById("Henceforth");
-const HenceforthValue = "2023-08-30";
-Henceforth.addEventListener("click", function(){
-    remove();
-    output_comment.innerHTML = "8/30 Orangestar의 앨범이 나옵니다 <br> 6년만의 메이저 앨범입니다"
-        
-    if(kyou.getTime() > HenceforthValue){
-        sugositahi_kaisan(HenceforthValue);
-    }
-    else{
-        kuruhi_kaisan(HenceforthValue);
-    }
-});
-
 const SelectDay = document.getElementById("SelectDay"); //달력에서 날짜를 선택했을 경우
 const SelectDayInput = document.getElementById("SelectDayInput");
 
