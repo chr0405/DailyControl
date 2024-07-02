@@ -1,72 +1,45 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>D-day Calculation</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel="icon" type="image/png" href="./images/soda.png">
-    <!-- <link rel='stylesheet' type='text/css' media='screen' href='main.css'> -->
-    <style>
-        @import url(style.css);
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <h1><a id="header_header" href="./index.html">D-day Calculation</a></h1>
     </header>
     <section class="input">
-        <h2 class="input_select" id="input_select_frequently" >자주 선택하는 기념일</h2>
-
-        <button type="button" id="StartThisYear">2023년 시작한지 얼마나 지났을까?</button>
-        <button type="button" id="LeftThisYear">2023년 끝나려면 얼마나 남았을까?</button><br>
-        <button type="button" id="CSAT">수능</button><br>
-
-        <button type="button" id="Valentine">발렌타인데이</button>
-        <button type="button" id="White_Day">화이트데이</button>
-        <button type="button" id="Christmas">크리스마스</button><br>
-
         <h2 class="input_select" id="input_select_directly">직접 선택하기</h2>
         <h5 id="input_explanation">기념하고 싶은 날을 골라보세요</h5>
-        <input type="date" id ="SelectDay" value="2023-06-01">
-        <button type="button" id ="SelectDayInput">확인</button><br>
-
+        <input type="date" id="SelectDay">
+        <button type="button" id="SelectDayInput">확인</button><br>
     </section>
     <section class="output">
         <h2 id="output_today"></h2>
 
-        <h4 id="output_comment">멋진 하루🌅를 보낼 당신!!<br>
+        <h4 id="output_comment">멋진 하루를 보낼 당신<br>
             스트레칭을 해보세요<br>
-            몸이 좋아지고 머리가 맑아집니다</h4>
-        
-        <h3 class="output_result_time" id="output_time"></h3>
-        <h5 class="output_result_time" id="output_time_ment"></h5>
+            몸이 풀리고 머리가 맑아집니다</h4>
 
-        <h2 class="output_subtitle" id="daycount" >날짜 수</h2>
-        <h5 class="output_subtitle_explanation" id="daycount_explanation">날짜 수는 1일부터 계산해요!<br>
-            연인과의 기념일 계산에 유용하답니다 ^!^</h5>
+        <h2 class="output_subtitle" id="daycount">날짜 수</h2>
+        <h5 class="output_subtitle_explanation" id="daycount_explanation">날짜 수는 1일부터 계산해요<br>
+            연인과의 기념일 계산에 유용합니다</h5>
         <h3 class="output_result" id="output_day"></h3>
-        
+
         <h2 class="output_subtitle" id="ddaycount">디데이</h2>
-        <h5 class="output_subtitle_explanation" id="ddaycount_explanation">디데이는 0일부터 계산해요!<br>
+        <h5 class="output_subtitle_explanation" id="ddaycount_explanation">디데이는 0일부터 계산해요<br>
             지난 날을 계산할 때만 적용됩니다</h5>
         <h3 class="output_result" id="output_Dday"></h3>
-        
-        <h2 class="output_subtitle" id="weekcount">주수</h2>
-        <h5 class="output_subtitle_explanation_1" id="weekcount_explanation">몇 주 며칠 단위로 알 수 있어요</h5>
-        <h3 class="output_result" id="output_week"></h3>
-
-        <h2 class="output_subtitle" id="output_monthcount">개월 수</h2>
-        <h5 class="output_subtitle_explanation_1" id="output_monthcount_explanation">몇 년 몇 개월 며칠 단위로 지났는지 알 수 있어요</h5>
-        <h3 class="output_result" id="output_month"></h3>
-        <h3 class="output_result" id="output_month_day"></h3>
     </section>
     <footer>
         <section class="copyright">
             <p id="copyright_text">@copyright, hrcho</p>
-         </section>
+        </section>
     </footer>
 
-    <script src='main.js'></script>
+    <script src="main.js"></script>
 </body>
 </html>
