@@ -3,7 +3,6 @@ document.addEventListener("DOMContentLoaded", function() {
     const SelectDayInput = document.getElementById("SelectDayInput");
 
     // 결과를 표시하는 요소들
-    const output_comment = document.getElementById("output_comment");
     const output_day = document.getElementById("output_day");
     const output_Dday = document.getElementById("output_Dday");
 
@@ -17,14 +16,11 @@ document.addEventListener("DOMContentLoaded", function() {
         const selectedDate = new Date(SelectDay.value);
 
         if (isSameDay(currentKoreaTime, selectedDate)) {
-            output_Dday.innerHTML = "오늘 날짜입니다";
-            output_day.innerHTML = "오늘 날짜입니다";
-            output_comment.innerHTML = "오늘을 기념해보세요";
+            output_Dday.innerHTML = "Today";
+            output_day.innerHTML = "Today";
         } else if (currentKoreaTime.getTime() > selectedDate.getTime()) {
-            output_comment.innerHTML = "시간이 쌓이고 있어요";
             calculatePastTime(selectedDate);
         } else {
-            output_comment.innerHTML = "시간이 흐르고 있어요";
             calculateFutureTime(selectedDate);
         }
     });
@@ -62,15 +58,14 @@ document.addEventListener("DOMContentLoaded", function() {
         const days = Math.abs(Math.floor(hours / 24));
 
         if (timeDifference < 0) {
-            output_Dday.innerHTML = (days + 1) + "일 지났습니다";
-            output_day.innerHTML = (days + 2) + "일 지났습니다";
+            output_Dday.innerHTML = (days + 1);
+            output_day.innerHTML = (days + 2);
         } else if (timeDifference > 0) {
-            output_Dday.innerHTML = days + "일 남았습니다";
-            output_day.innerHTML = days + "일 남았습니다";
+            output_Dday.innerHTML = days;
+            output_day.innerHTML = days;
         } else {
-            output_Dday.innerHTML = "오늘 날짜입니다";
-            output_day.innerHTML = "오늘 날짜입니다";
-            output_comment.innerHTML = "오늘을 기념해보세요";
+            output_Dday.innerHTML = "Today";
+            output_day.innerHTML = "Today";
         }
     }
 
@@ -84,7 +79,6 @@ document.addEventListener("DOMContentLoaded", function() {
     // 이전 결과 초기화 함수
     function remove() {
         clearTimeout(TimerStop);
-        output_comment.innerHTML = "";
         output_day.innerHTML = "";
         output_Dday.innerHTML = "";
     }

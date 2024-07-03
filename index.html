@@ -1,44 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>D-day Calculation</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta charset="UTF-8"> -->
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <title>DailyControl</title>
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1><a id="header_header" href="./index.html">D-day Calculation</a></h1>
+    <header id="header">
+        <h1 id="header_time">22 : 26 : 58</h1>
+        <h1 id="header_siteName">DailyControl</h1>
     </header>
     <section class="input">
-        <h2 class="input_select" id="input_select_directly">직접 선택하기</h2>
-        <h5 id="input_explanation">기념하고 싶은 날을 골라보세요</h5>
+        <h2 class="input_select" id="input_select_directly">날짜 선택하기</h2>
         <input type="date" id="SelectDay">
-        <button type="button" id="SelectDayInput">확인</button><br>
+        <button type="button" id="SelectDayInput">선택</button><br>
     </section>
     <section class="output">
-        <h2 id="output_today"></h2>
-
-        <h4 id="output_comment">멋진 하루를 보낼 당신<br>
-            스트레칭을 해보세요<br>
-            몸이 풀리고 머리가 맑아집니다</h4>
-
         <h2 class="output_subtitle" id="daycount">날짜 수</h2>
-        <h5 class="output_subtitle_explanation" id="daycount_explanation">날짜 수는 1일부터 계산해요<br>
-            연인과의 기념일 계산에 유용합니다</h5>
+        <h5 class="output_subtitle_explanation" id="daycount_explanation">날짜 수는 1일부터 계산 합니다<br>
+            기념일 계산에 유용합니다</h5>
         <h3 class="output_result" id="output_day"></h3>
 
         <h2 class="output_subtitle" id="ddaycount">디데이</h2>
-        <h5 class="output_subtitle_explanation" id="ddaycount_explanation">디데이는 0일부터 계산해요<br>
+        <h5 class="output_subtitle_explanation" id="ddaycount_explanation">디데이는 0일부터 계산 합니다<br>
             지난 날을 계산할 때만 적용됩니다</h5>
         <h3 class="output_result" id="output_Dday"></h3>
     </section>
-    <footer>
-        <section class="copyright">
-            <p id="copyright_text">@copyright, hrcho</p>
-        </section>
-    </footer>
 
     <script src="main.js"></script>
 </body>
