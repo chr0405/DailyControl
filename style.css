@@ -428,6 +428,11 @@ body {
     cursor: pointer;
 }
 
+input[type="date"] {
+    border: none;
+    outline: none;
+}
+
 #SelectDayInput {
     width: 4.17vw;
     height: 2.43vw;

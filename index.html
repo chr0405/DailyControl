@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <!-- <meta charset="UTF-8"> -->
+    <meta charset="UTF-8">
     <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
     <title>DailyControl</title>
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </head>
 <body>
     <header id="header">
-        <h1 id="header_time">22 : 26 : 58</h1>
+        <h1 id="header_time">00 : 00 : 00</h1>
         <h1 id="header_siteName">DailyControl</h1>
     </header>
     <div id="content">
@@ -64,15 +65,15 @@
             <h1 class="content_div_name">DayCounter</h1>
 
             <div class="DayCounter_btnDiv">
-                <div class="DayCounter_btn">올해 시작한 지</div>
-                <div class="DayCounter_btn">올해 끝나려면</div>
+                <div class="DayCounter_btn" id="start_year">올해 시작한 지</div>
+                <div class="DayCounter_btn" id="end_year">올해 끝나려면</div>
             </div>
 
             <div class="DayCounter_btnDiv">
-                <div class="DayCounter_btn">발렌타인데이</div>
-                <div class="DayCounter_btn">화이트데이</div>
-                <div class="DayCounter_btn">빼빼로데이</div>
-                <div class="DayCounter_btn">크리스마스</div>
+                <div class="DayCounter_btn" id="Valentine">발렌타인데이</div>
+                <div class="DayCounter_btn" id="White">화이트데이</div>
+                <div class="DayCounter_btn" id="Pepero">빼빼로데이</div>
+                <div class="DayCounter_btn" id="Christmas">크리스마스</div>
             </div>
 
             <div class="DayCounter_btnDiv" id="DayCounter_btnDiv2">
@@ -90,9 +91,9 @@
                         기념일 계산에 유용합니다</h5>
                     <div class="DayCounter_resultDiv">
                         <h3  class="result_number" id="output_day"></h3>
-                        <h6 class="DayCounter_resultDay2">day</h6>
+                        <h6 class="DayCounter_resultDay2" id="day_day"></h6>
                     </div>
-                    <div class="result_text" id="DayCounter_text">지났습니다</div>
+                    <div class="result_text" id="DayCounter_text"></div>
                 </div>
                 
                 <div class="DayCounter_result">
@@ -101,9 +102,9 @@
                         지난 날을 계산할 때만 적용됩니다</h5>
                     <div class="DayCounter_resultDiv">
                         <h3  class="result_number" id="output_Dday"></h3>
-                        <h6 class="DayCounter_resultDay2">day</h6>
+                        <h6 class="DayCounter_resultDay2" id="Dday_day"></h6>
                     </div>
-                    <div class="result_text" id="DayCounter_text">지났습니다</div>
+                    <div class="result_text" id="DayCounter_text2"></div>
                 </div>
             </div>
         </div>
@@ -112,25 +113,25 @@
                 <h1 class="content_div_name">WeatherNow</h1>
                 <div id="WeatherNow_content">
                     <div class="WeatherNow_btnDiv">
-                        <div class="WeatherNow_btn">서울</div>
+                        <div class="WeatherNow_btn" id="Seoul">서울</div>
                     </div>
     
                     <div class="WeatherNow_btnDiv">
-                        <div class="WeatherNow_btn">부산</div><div class="WeatherNow_btn">대구</div>
-                        <div class="WeatherNow_btn">인천</div><div class="WeatherNow_btn">광주</div>
-                        <div class="WeatherNow_btn">대전</div><div class="WeatherNow_btn">울산</div>
+                        <div class="WeatherNow_btn" id="Busan">부산</div><div class="WeatherNow_btn" id="Daegu">대구</div>
+                        <div class="WeatherNow_btn" id="Incheon">인천</div><div class="WeatherNow_btn" id="Gwangju">광주</div>
+                        <div class="WeatherNow_btn" id="Daejeon">대전</div><div class="WeatherNow_btn" id="Ulsan">울산</div>
                     </div>
                     
                     <div class="WeatherNow_btnDiv">
-                        <div class="WeatherNow_btn">세종</div><div class="WeatherNow_btn">제주</div>
+                        <div class="WeatherNow_btn" id="Sejong">세종</div><div class="WeatherNow_btn" id="Jeju">제주</div>
                     </div>
     
                     <div id="WeatherNow_result">
                         <div id="WeatherNow_numberDiv">
-                            <h1 class="result_number">23</h1>
-                            <h6 id="WeatherNow_unit">℃</h6>
+                            <h1 class="result_number" id="WeatherNow_number"></h1>
+                            <h6 id="WeatherNow_unit"></h6>
                         </div>
-                        <div class="result_text">먹구름 🌥️</div>
+                        <div class="result_text" id="WeatherNow_text"></div>
                     </div>
                 </div>
             </div>
@@ -138,6 +139,9 @@
         </div>
     </div>
 
-    <script src="main.js"></script>
+    <script type="module" src="main.js"></script>
+    <script type="module" src="main2.js"></script>
+    <script type="module" src="main3.js"></script>
+    <!-- <script type="module" src="CounterLog.js"></script> -->
 </body>
 </html>
