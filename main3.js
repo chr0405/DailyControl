@@ -1,3 +1,5 @@
+// WeatherNow
+
 document.addEventListener("DOMContentLoaded", function() {
     const WeatherNow_btn = document.querySelectorAll('.WeatherNow_btn');
     let selectedButton = null; // 선택된 버튼을 저장할 변수
