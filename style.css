@@ -1,33 +1,507 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    background-color: #FEE5EB;
+}
 
 #header {
-    width: 100vw;
+    width: 100%;
     height: 28.47vw;
 
     background-color: #FFC2D2;
 
     position: absolute;
-    top: 0px;
-    left: 0px;
+    top: 0vw;
+    left: 0vw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0vw 0.28vw 0.28vw rgba(0, 0, 0, 0.4); 
+}
+
+#header_time {
+    font: italic 20vw 'Roboto', Arial, sans-serif;
+    color: #FB6F92;
+    text-shadow: -0.14vw -0.14vw 0 #00000050, -0.14vw -0.14vw 0 #00000050, 0.14vw -0.14vw 0 #00000050, 0.14vw 0vw 0 #00000050;
+    margin: 0vw 0vw;
+
+    position: relative;
+    top: 0vw;
+    height: 19.83vw;
+}
+
+#header_siteName {
+    font: bold 6.94vw Arial, sans-serif;
+    color: #FFFFFF;
+    -webkit-text-stroke: 0.07vw black;
+
+    position: relative;
+    margin: 0vw 0vw;
+
+    animation: slideDown 1s ease-out;
+}
+
+@keyframes slideDown {
+    from {
+        top: -100%;
+    }
+    to {
+        top: 0;
+    }
+}
+
+
+#content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+
+    width: 100%;
+
+    position: absolute;
+    top: 30.36vw;
+    left: 0vw;
+}
+
+.content_div{
+    border-radius: 2.08vw;
+    box-shadow: 0.28vw 0.28vw 0.28vw rgba(0, 0, 0, 0.3);
 
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#header_time {
-    font: italic 300px 'Roboto', Arial, sans-serif; /* 폰트 스타일, 크기 및 폰트 패밀리 설정 */
-    color: #FB6F92; /* 텍스트 색상 설정 */
-    text-shadow: -2px -2px 0 #00000070, -2px -2px 0 #00000070, 2px -2px 0 #00000070, 2px 0px 0 #00000070;
-    margin: 0; /* 마진 설정 */
-    height: 300px; /* 높이 설정 */
+#CounterLog {
+    width: 21.46vw;
+    height: 34.72vw;
+
+    background-color: #FE8FAA;
 }
 
-#header_siteName {
-    font: bold 100px Arial, sans-serif; /* 폰트 스타일, 크기 및 폰트 패밀리 설정 */
-    color: #FFFFFF; /* 텍스트 색상 설정 */
-    text-shadow: 0px 6px 6px rgba(0, 0, 0, 0.5); /* 그림자 효과 설정 */
-    -webkit-text-stroke: 1px black; /* 텍스트 테두리 설정 (웹킷 기반 브라우저에서 사용) */
+#DayCounter {
+    width: 42.29vw;
+    height: 36.81vw;
+
+    background-color: #FFB3C7;
+
+    margin: 0vw 3.47vw 2.08vw 3.47vw;
+}
+
+#right_div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#WeatherNow {
+    width: 21.46vw;
+    height: 33.33vw;
+
+    background-color: #FE8FAA;
+}
+
+.content_div_name {
+    font-size: 3.13vw;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-style: italic;
+    font-weight: 700;
+    
+    color: #C7DFA5;
+    -webkit-text-stroke: 0.07vw black;
+
+    margin: 0.69vw 0vw 1.39vw 0vw;
+}
+
+/* CounterLog */
+
+.individual_CounterLog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin: 0vw 0vw 1.39vw 0vw;
+}
+
+.CounterLog_selectDay {
+    margin: 0vw 0vw;
+    font-family: Arial, sans-serif;
+
+    font-size: 1.74vw;
+    font-weight: bold;
+    color: #34661F;
+}
+
+.CounterLog_result{
+    margin: 0vw 0vw;
+}
+
+.CounterLog_result_div {
+    margin: 0.69vw 0vw 0vw 0vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.result_name {
+    margin: 0vw 0.69vw 0vw 0vw;
+    font-family: Arial, sans-serif;
+
+    font-size: 1.74vw;
+    color: white;
+    -webkit-text-stroke: 0.07vw black;
+}
+
+.result_value {
+    margin: 0vw 0vw 0vw 0.69vw;
+
+    font-family: 'Roboto', Arial, sans-serif;
+    font-style: italic;
+    font-size: 1.74vw;
+
+    color: white;
+
+    text-shadow: 0vw 0.28vw 0.28vw rgba(0, 0, 0, 0.3);
+    -webkit-text-stroke: 0.07vw black;
+}
+
+/* WeatherNow */
+
+#WeatherNow_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.WeatherNow_btnDiv {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 20.83vw;
+    height: auto;
+    overflow: visible;
+
+    margin: 0vw 0vw 0.69vw 1.04vw;
+    /* background-color: red; */
+}
+
+.WeatherNow_btn {
+    width: 4.17vw;
+    height: 2.43vw;
+
+    background-color: #AED383;
+    box-shadow: 0vw 0.28vw 0.28vw rgba(0, 0, 0, 0.4);
+    border-radius: 0.69vw;
+    
+    /* 양 옆 5px, 밑으로 10px */
+    margin: 0vw 0.35vw 0.69vw 0.35vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: Arial, sans-serif;
+    font-size: 1.74vw;
+    font-weight: 600;
+    color: white;
+    -webkit-text-stroke: 0.07vw black;
+}
+
+.WeatherNow_btn:hover {
+    cursor: pointer;
+}
+
+.WeatherNow_btn2 {
+    width: 4.17vw;
+    height: 2.43vw;
+
+    background-color: #9DCC66;
+    box-shadow: inset 0vw 0.28vw 0.28vw rgba(0, 0, 0, 0.4);
+    border-radius: 0.69vw;
+    
+    /* 양 옆 5px, 밑으로 10px */
+    margin: 0vw 0.35vw 0.69vw 0.35vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: Arial, sans-serif;
+    font-size: 1.74vw;
+    font-weight: 600;
+    color: white;
+    -webkit-text-stroke: 0.07vw black;
+}
+
+.WeatherNow_btn2:hover {
+    cursor: pointer;
+}
+
+#WeatherNow_result {
+    margin: 0.69vw 0vw 0vw 0vw;
+
+    display: flex;
+    flex-direction: column
+    ;
+    align-items: center;
+    justify-content: center;
+}
+
+#WeatherNow_numberDiv{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
 
     margin: 0vw 0vw;
+}
+
+.result_number{
+    font-size: 6.9vw;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-style: italic;
+    font-weight: 500;
+    
+    color: white;
+    text-shadow: 0vw 0.28vw 0.28vw rgba(0, 0, 0, 0.5);
+    -webkit-text-stroke: 0.07vw black;
+
+    margin: 0vw 0vw;
+}
+
+.result_number2 {
+    font-size: 4.86vw;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-style: italic;
+    font-weight: 500;
+    
+    color: white;
+    text-shadow: 0vw 0.28vw 0.28vw rgba(0, 0, 0, 0.5);
+    -webkit-text-stroke: 0.07vw black;
+
+    margin: 0vw 0vw;
+}
+
+#WeatherNow_unit{
+    font-size: 3.47vw;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-style: italic;
+    font-weight: 500;
+    
+    color: white;
+    text-shadow: 0vw 0.28vw 0.28vw rgba(0, 0, 0, 0.5);
+    -webkit-text-stroke: 0.07vw black;
+
+    margin: 0vw 0vw;
+
+    position: relative;
+    top: -1vw;
+}
+
+.result_text {
+    font-family: Arial, sans-serif;
+    font-size: 1.74vw;
+    font-weight: 600;
+    color: white;
+    -webkit-text-stroke: 0.07vw black;
+    margin: 0vw 0vw;
+}
+
+#copyright {
+    font-family: Arial, sans-serif;
+    font-size: 1.39vw;
+    color: #E75B7E;
+
+    margin: 2vw 0vw 0vw 0vw;
+
+    /* background-color: red; */
+}
+
+/* DayCounter */
+
+.DayCounter_btnDiv {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 42.29vw;
+    height: auto;
+    overflow: visible;
+
+    margin: 0vw 0vw 1.39vw 0vw;
+}
+
+.DayCounter_btn {
+    width: auto;
+    height: 2.43vw;
+    padding: 0vw 0.3vw;
+
+    background-color: #AED383;
+    box-shadow: 0vw 0.28vw 0.28vw rgba(0, 0, 0, 0.4);
+    border-radius: 0.69vw;
+    
+    /* 양 옆 5px, 밑으로 10px */
+    margin: 0vw 0vw 0vw 0.69vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: Arial, sans-serif;
+    font-size: 1.74vw;
+    font-weight: 600;
+    color: white;
+    -webkit-text-stroke: 0.07vw black;
+}
+
+.DayCounter_btn:hover {
+    cursor: pointer;
+}
+
+.DayCounter_btn2 {
+    width: auto;
+    height: 2.43vw;
+    padding: 0vw 0.3vw;
+
+    background-color: #AED383;
+    box-shadow: inset 0vw 0.28vw 0.28vw rgba(0, 0, 0, 0.4);
+    border-radius: 0.69vw;
+    
+    /* 양 옆 5px, 밑으로 10px */
+    margin: 0vw 0vw 0vw 0.69vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: Arial, sans-serif;
+    font-size: 1.74vw;
+    font-weight: 600;
+    color: white;
+    -webkit-text-stroke: 0.07vw black;
+}
+
+.DayCounter_btn2:hover {
+    cursor: pointer;
+}
+
+#DayCounter_btnDiv2 {
+    display: flex;
+    flex-direction: column;
+    width: 41.6vw;
+
+    padding-left: 0.69vw;
+}
+
+#SelectDayDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 0.69vw;
+}
+
+#SelectDay {
+    width: 13vw;
+    height: 2.15vw;
+
+    background-color: #AED383;
+    box-shadow: 0vw 0.28vw 0.28vw rgba(0, 0, 0, 0.4);
+    border-radius: 0.69vw;
+    border-color: #00000000;
+    
+    margin: 0vw 0.35vw 0vw 0vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: Arial, sans-serif;
+    font-size: 1.74vw;
+    color: #34661F;
+}
+
+#SelectDay:hover {
+    cursor: pointer;
+}
+
+#SelectDayInput {
+    width: 4.17vw;
+    height: 2.43vw;
+
+    background-color: #AED383;
+    box-shadow: 0vw 0.28vw 0.28vw rgba(0, 0, 0, 0.4);
+    border-radius: 0.69vw;
+    
+    margin: 0vw 0.35vw 0vw 0.35vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: Arial, sans-serif;
+    font-size: 1.74vw;
+    font-weight: 600;
+    color: white;
+    -webkit-text-stroke: 0.07vw black;
+}
+
+#SelectDayInput:hover {
+    cursor: pointer;
+}
+
+#DayCounter_resultTotalDiv{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    height: 15.42vw;
+
+    /* background-color: red; */
+}
+
+.DayCounter_result {
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-start;
+    justify-content: center;
+
+    margin: 0vw 1vw;
+}
+
+.DayCounter_resultExplain {
+    font-family: Arial, sans-serif;
+    font-size: 0.97vw;
+    margin: 0vw 0vw;
+}
+
+.DayCounter_resultDiv {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+.DayCounter_resultDay2{
+    font-size: 1.74vw;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-style: italic;
+    font-weight: 500;
+    
+    color: white;
+    text-shadow: 0vw 0.28vw 0.28vw rgba(0, 0, 0, 0.5);
+    -webkit-text-stroke: 0.07vw black;
+
+    margin: 0vw 0vw;
+
+    position: relative;
+    top: -1vw;
+}
+
+#DayCounter_text {
+    position: relative;
+    top: 0vw;
 }

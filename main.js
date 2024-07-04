@@ -58,11 +58,11 @@ document.addEventListener("DOMContentLoaded", function() {
         const days = Math.abs(Math.floor(hours / 24));
 
         if (timeDifference < 0) {
-            output_Dday.innerHTML = (days + 1);
-            output_day.innerHTML = (days + 2);
-        } else if (timeDifference > 0) {
             output_Dday.innerHTML = days;
-            output_day.innerHTML = days;
+            output_day.innerHTML = days + 1;
+        } else if (timeDifference > 0) {
+            output_Dday.innerHTML = days + 1;
+            output_day.innerHTML = days + 1;
         } else {
             output_Dday.innerHTML = "Today";
             output_day.innerHTML = "Today";

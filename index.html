@@ -12,22 +12,131 @@
         <h1 id="header_time">22 : 26 : 58</h1>
         <h1 id="header_siteName">DailyControl</h1>
     </header>
-    <section class="input">
-        <h2 class="input_select" id="input_select_directly">날짜 선택하기</h2>
-        <input type="date" id="SelectDay">
-        <button type="button" id="SelectDayInput">선택</button><br>
-    </section>
-    <section class="output">
-        <h2 class="output_subtitle" id="daycount">날짜 수</h2>
-        <h5 class="output_subtitle_explanation" id="daycount_explanation">날짜 수는 1일부터 계산 합니다<br>
-            기념일 계산에 유용합니다</h5>
-        <h3 class="output_result" id="output_day"></h3>
+    <div id="content">
+        <div class="content_div" id="CounterLog">
+            <h1 class="content_div_name">CounterLog</h1>
+            <div class="CounterLog_div">
+                <div class="individual_CounterLog">
+                    <h3 class="CounterLog_selectDay">2024 - 03 - 23</h3>
+                    <div class="CounterLog_result">
+                        <div class="CounterLog_result_div">
+                            <h3 class="result_name">날짜 수</h3>
+                            <h3 class="result_value">D + 103</h3>
+                        </div>
+                        <div class="CounterLog_result_div">
+                            <h3 class="result_name">디데이</h3>
+                            <h3 class="result_value">D + 102</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="CounterLog_div">
+                <div class="individual_CounterLog">
+                    <h3 class="CounterLog_selectDay">2024 - 03 - 23</h3>
+                    <div class="CounterLog_result">
+                        <div class="CounterLog_result_div">
+                            <h3 class="result_name">날짜 수</h3>
+                            <h3 class="result_value">D + 103</h3>
+                        </div>
+                        <div class="CounterLog_result_div">
+                            <h3 class="result_name">디데이</h3>
+                            <h3 class="result_value">D + 102</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <div class="individual_CounterLog">
+                    <h3 class="CounterLog_selectDay">2024 - 03 - 23</h3>
+                    <div class="CounterLog_result">
+                        <div class="CounterLog_result_div">
+                            <h3 class="result_name">날짜 수</h3>
+                            <h3 class="result_value">D + 103</h3>
+                        </div>
+                        <div class="CounterLog_result_div">
+                            <h3 class="result_name">디데이</h3>
+                            <h3 class="result_value">D + 102</h3>
+                        </div>
+                    </div>
+                </div>
+        </div>
 
-        <h2 class="output_subtitle" id="ddaycount">디데이</h2>
-        <h5 class="output_subtitle_explanation" id="ddaycount_explanation">디데이는 0일부터 계산 합니다<br>
-            지난 날을 계산할 때만 적용됩니다</h5>
-        <h3 class="output_result" id="output_Dday"></h3>
-    </section>
+        <div class="content_div" id="DayCounter">
+            <h1 class="content_div_name">DayCounter</h1>
+
+            <div class="DayCounter_btnDiv">
+                <div class="DayCounter_btn">올해 시작한 지</div>
+                <div class="DayCounter_btn">올해 끝나려면</div>
+            </div>
+
+            <div class="DayCounter_btnDiv">
+                <div class="DayCounter_btn">발렌타인데이</div>
+                <div class="DayCounter_btn">화이트데이</div>
+                <div class="DayCounter_btn">빼빼로데이</div>
+                <div class="DayCounter_btn">크리스마스</div>
+            </div>
+
+            <div class="DayCounter_btnDiv" id="DayCounter_btnDiv2">
+                <h2  class="result_text">날짜 선택하기</h2>
+                <div id="SelectDayDiv">
+                    <input type="date" id="SelectDay">
+                    <div id="SelectDayInput">선택</div>
+                </div>
+            </div>
+
+            <div id="DayCounter_resultTotalDiv">
+                <div class="DayCounter_result">
+                    <h2 class="result_text">날짜 수</h2>
+                    <h5 class="DayCounter_resultExplain">날짜 수는 1일부터 계산 합니다<br>
+                        기념일 계산에 유용합니다</h5>
+                    <div class="DayCounter_resultDiv">
+                        <h3  class="result_number" id="output_day"></h3>
+                        <h6 class="DayCounter_resultDay2">day</h6>
+                    </div>
+                    <div class="result_text" id="DayCounter_text">지났습니다</div>
+                </div>
+                
+                <div class="DayCounter_result">
+                    <h2 class="result_text">디데이</h2>
+                    <h5 class="DayCounter_resultExplain">디데이는 0일부터 계산 합니다<br>
+                        지난 날을 계산할 때만 적용됩니다</h5>
+                    <div class="DayCounter_resultDiv">
+                        <h3  class="result_number" id="output_Dday"></h3>
+                        <h6 class="DayCounter_resultDay2">day</h6>
+                    </div>
+                    <div class="result_text" id="DayCounter_text">지났습니다</div>
+                </div>
+            </div>
+        </div>
+        <div id="right_div">
+            <div class="content_div" id="WeatherNow">
+                <h1 class="content_div_name">WeatherNow</h1>
+                <div id="WeatherNow_content">
+                    <div class="WeatherNow_btnDiv">
+                        <div class="WeatherNow_btn">서울</div>
+                    </div>
+    
+                    <div class="WeatherNow_btnDiv">
+                        <div class="WeatherNow_btn">부산</div><div class="WeatherNow_btn">대구</div>
+                        <div class="WeatherNow_btn">인천</div><div class="WeatherNow_btn">광주</div>
+                        <div class="WeatherNow_btn">대전</div><div class="WeatherNow_btn">울산</div>
+                    </div>
+                    
+                    <div class="WeatherNow_btnDiv">
+                        <div class="WeatherNow_btn">세종</div><div class="WeatherNow_btn">제주</div>
+                    </div>
+    
+                    <div id="WeatherNow_result">
+                        <div id="WeatherNow_numberDiv">
+                            <h1 class="result_number">23</h1>
+                            <h6 id="WeatherNow_unit">℃</h6>
+                        </div>
+                        <div class="result_text">먹구름 🌥️</div>
+                    </div>
+                </div>
+            </div>
+            <div id="copyright">@copyright, hrcho</div>
+        </div>
+    </div>
 
     <script src="main.js"></script>
 </body>
