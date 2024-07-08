@@ -1,4 +1,4 @@
-# 🎀 DailyControl
+# 🎀DailyControl
 
 디데이와 날씨를 알려주는 웹 사이트입니다.
 
