@@ -77,14 +77,14 @@ body {
 
 #CounterLog {
     width: 21.46vw;
-    height: 34.72vw;
+    height: auto;
 
     background-color: #FE8FAA;
 }
 
 #DayCounter {
     width: 42.29vw;
-    height: 36.81vw;
+    height: auto;
 
     background-color: #FFB3C7;
 
@@ -99,7 +99,7 @@ body {
 
 #WeatherNow {
     width: 21.46vw;
-    height: 33.33vw;
+    height: auto;
 
     background-color: #FE8FAA;
 }
@@ -244,8 +244,6 @@ body {
 }
 
 #WeatherNow_result {
-    margin: 0.69vw 0vw 0vw 0vw;
-
     display: flex;
     flex-direction: column
     ;
@@ -257,8 +255,6 @@ body {
     display: flex;
     align-items: flex-end;
     justify-content: center;
-
-    margin: 0vw 0vw;
 }
 
 .result_number{
@@ -310,6 +306,10 @@ body {
     color: white;
     -webkit-text-stroke: 0.07vw black;
     margin: 0vw 0vw;
+}
+
+#WeatherNow_text {
+    margin-bottom: 2.08vw;
 }
 
 #copyright {
@@ -465,7 +465,7 @@ input[type="date"] {
     align-items: flex-start;
     justify-content: space-between;
 
-    height: 15.42vw;
+    height: auto;
 
     /* background-color: red; */
 }
@@ -483,13 +483,16 @@ input[type="date"] {
 .DayCounter_resultExplain {
     font-family: Arial, sans-serif;
     font-size: 0.97vw;
-    margin: 0vw 0vw;
+    margin: 0vw 0vw 2.08vw 0vw;
 }
 
 .DayCounter_resultDiv {
     display: flex;
     align-items: flex-end;
     justify-content: flex-start;
+
+    position: relative;
+    top: -2.08vw;
 }
 
 .DayCounter_resultDay2{
@@ -508,7 +511,7 @@ input[type="date"] {
     top: -1vw;
 }
 
-#DayCounter_text {
+#DayCounter_text,  #DayCounter_text2{
     position: relative;
-    top: 0vw;
+    top: -2.08vw;
 }
