@@ -174,9 +174,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // 날짜가 같은지 비교하는 함수
     function isSameDay(date1, date2) {
-        return date1.getFullYear() === date2.getFullYear() &&
-               date1.getMonth() === date2.getMonth() &&
-               date1.getDate() === date2.getDate();
+        return date1.getUTCFullYear() === date2.getUTCFullYear() &&
+               date1.getUTCMonth() === date2.getUTCMonth() &&
+               date1.getUTCDate() === date2.getUTCDate();
     }
 
     // 이전 결과 초기화 함수
@@ -207,8 +207,8 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     // 전역 변수로 dataArray 정의
-    let dataArray = JSON.parse(localStorage.getItem('selectedDates'));
-    // let dataArray = JSON.parse(localStorage.getItem('selectedDates')) || [];
+    // let dataArray = JSON.parse(localStorage.getItem('selectedDates'));
+    let dataArray = JSON.parse(localStorage.getItem('selectedDates')) || [];
 
     // saveLocalStorage 함수 정의
     function saveLocalStorage(date, day, Dday) {
