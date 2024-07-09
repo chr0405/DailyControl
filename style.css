@@ -6,6 +6,11 @@ body {
     height: auto;
 }
 
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+    display: none;
+}
+
 #header {
     width: 100%;
     height: 28.47vw;
