@@ -22,7 +22,7 @@ youtube : [시연 연상](https://www.youtube.com/watch?v=5FmfYGDka5I)
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=white"/>
 </p>
 
-## 🔑주요 기능
-🔸 지역별 날씨 정보 제공 (WeatherNow)\
-🔸 선택한 날짜의 남은 / 지난 날짜 수 및 D-day 계산 (DayCounter)\
-🔸 사용자의 웹 사이트 이용 기록 시각화 (CounterLog)
+## 🩰주요 기능
+🔻 지역별 날씨 정보 제공 (WeatherNow)\
+🔻 선택한 날짜의 남은 / 지난 날짜 수 및 D-day 계산 (DayCounter)\
+🔻 사용자의 웹 사이트 이용 기록 시각화 (CounterLog)
