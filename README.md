@@ -26,3 +26,14 @@ youtube : [시연 연상](https://www.youtube.com/watch?v=5FmfYGDka5I)
 🔻 지역별 날씨 정보 제공 (WeatherNow)\
 🔻 선택한 날짜의 남은 / 지난 날짜 수 및 D-day 계산 (DayCounter)\
 🔻 사용자의 웹 사이트 이용 기록 시각화 (CounterLog)
+
+## 👝파일 구조
+```
+📁images  # 이미지 파일 저장 디렉토리
+index.html
+main.js   # DayCounter
+main2.js   # header - 현재 시간
+main3.js   # WeatherNow
+main4.js   # CounterLog
+style.css   # 전체 css
+```
